@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ejerciciosraul" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personalizaciones de color si deseas -->
+    </style>
+</resources>

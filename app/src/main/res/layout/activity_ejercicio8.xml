@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Barra superior azul -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp">
+    </LinearLayout>
+
+    <!-- Contenido principal centrado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Espacio superior para centrar el texto Home -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" />
+
+        <!-- Título Home -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#3F51B5"
+            android:textSize="36sp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Botón 1: NAVIGATE TO DESTINATION -->
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="NAVIGATE TO DESTINATION"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Botón 2: NAVIGATE WITH ACTION -->
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="NAVIGATE WITH ACTION"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF" />
+
+        <!-- Espacio flexible inferior -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Navegación inferior (Home) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_house"
+                android:tint="#3F51B5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#3F51B5"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

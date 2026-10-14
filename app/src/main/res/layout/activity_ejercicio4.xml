@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
+    android:padding="5dp">
+
+    <!-- Contenedor principal horizontal para separar la matriz numérica del botón lateral -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Columna izquierda: Números (1 al 9 y el 0) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Fila 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="1" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="2" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="3" android:layout_margin="2dp"/>
+            </LinearLayout>
+
+            <!-- Fila 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="4" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="5" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="6" android:layout_margin="2dp"/>
+            </LinearLayout>
+
+            <!-- Fila 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="7" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="8" android:layout_margin="2dp"/>
+                <Button android:layout_width="75dp" android:layout_height="75dp" android:text="9" android:layout_margin="2dp"/>
+            </LinearLayout>
+
+            <!-- Fila 4: Botón 0 ancho abarcando los tres espacios -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="233dp" android:layout_height="75dp" android:text="0" android:layout_margin="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Columna derecha: Botones de operaciones (+, =, C) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button android:layout_width="75dp" android:layout_height="75dp" android:text="+" android:layout_margin="2dp"/>
+            <Button android:layout_width="75dp" android:layout_height="154dp" android:text="=" android:layout_margin="2dp"/>
+            <Button android:layout_width="75dp" android:layout_height="75dp" android:text="C" android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
